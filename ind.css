@@ -1,0 +1,298 @@
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+
+/* < TOP CONTACT TABLE> */
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.w3-table {
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+    color: whitesmoke;
+    letter-spacing: 1px;
+}
+
+
+/* .w3-bar-item {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: whitesmoke;
+    background-color: rgba(2, 2, 78, 0);
+} */
+
+
+/* <This is for TopNav and front page images> */
+
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+
+/* Create a Parallax Effect */
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* First image (Logo. Full height) */
+
+.w3-bar {
+    background-color: black;
+    background-image: linear-gradient( rgba(17, 37, 146, 0.15), rgba(24, 50, 197, 0.5), rgba(24, 50, 197, 1));
+    /* background-image: linear-gradient( rgba(2, 2, 78, 0.74), rgba(2, 2, 78, 0.8), rgba(2, 2, 78, 0.9), rgba(2, 2, 78, 0.8), rgba(2, 2, 78, 0.74)); */
+    /* color: whitesmoke; */
+    /* margin-top: 1%; */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* 
+.summa {
+    background-color: red;
+} */
+
+.w3-bar-item {
+    font-size: medium;
+    background-color: rgba(17, 37, 146, 0);
+    /* background-image: linear-gradient( rgba(2, 2, 78, 0.74), rgba(2, 2, 78, 0.8), rgba(2, 2, 78, 0.9), rgba(2, 2, 78, 0.8), rgba(2, 2, 78, 0.74)); */
+    /* background-image: linear-gradient( rgba(17, 37, 146, 1), rgba(24, 50, 197, 0), rgba(24, 50, 197, 0)); */
+    color: whitesmoke;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+
+/* .w3-bar-item {
+    background-color: red;
+    color: white;
+} */
+
+.w3-wide {
+    letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+    cursor: pointer;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+
+
+/* @media only screen and (max-device-width: 1600px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+} */
+
+
+/* <This is from temp2.html> */
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /* border-radius: 20px; */
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+    opacity: 1;
+}
+
+.slide .content {
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(2, 2, 78, 0.74);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: whitesmoke;
+    padding: 35px;
+}
+
+.slide .content h1 {
+    margin-bottom: 10px;
+}
+
+.slide.current .content {
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+    position: absolute;
+    top: 40%;
+    right: 15px;
+}
+
+.buttons button#prev {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+}
+
+.buttons button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.buttons button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+@media (max-width: 500px) {
+    .slide .content {
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+    .slide.current .content {
+        transform: translateY(-300px);
+    }
+}
+
+
+/* Backgorund Images */
+
+.slide:first-child {
+    background: url('1.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(2) {
+    background: url('2.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(3) {
+    background: url('3.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(4) {
+    background: url('4.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(5) {
+    background: url('5.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(6) {
+    background: url('4.jpg') no-repeat center center/cover;
+}
+
+
+/* <This is for top navigation bar> */
+
+.underlineEffects ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: table;
+    text-align: center;
+}
+
+.underlineEffects li {
+    display: table-cell;
+    position: relative;
+    /* padding: 15px 0; */
+}
+
+.underlineEffects a {
+    /* color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0); */
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 1);
+    /* background-image: linear-gradient( rgba(2, 2, 78, 0.8), rgba(2, 2, 78, 0.9), rgba(2, 2, 78, 0.8)); */
+    background-image: linear-gradient( rgba(17, 37, 146, 0.15), rgba(24, 50, 197, 0.5), rgba(24, 50, 197, 0.9));
+    /* background-image: linear-gradient( rgba(17, 37, 146, 0.15), rgba(24, 50, 197, 0.5), rgba(24, 50, 197, 1)); */
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    /* padding-left: 20px; */
+    padding: 8px 20px;
+    /* padding: 15px 20px; */
+    position: relative;
+}
+
+.underlineEffects a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: red;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.underlineEffects a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+#lightbutton {
+    /* padding: 20px 80px; */
+    /* color: rgba(0, 0, 0, 1); */
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: whitesmoke;
+    /* letter-spacing: 4px; */
+    /* border: 10px solid red; */
+    outline: 0;
+    border-radius: 5px;
+    /* font-weight: bold;
+    font-size: large; */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+#lightbutton:hover {
+    background-color: black;
+    background-image: linear-gradient( rgba(17, 37, 146, 0.15), rgba(24, 50, 197, 0.5), rgba(24, 50, 197, 1));
+    /* background-image: linear-gradient( rgba(255, 17, 0, 0), rgba(255, 17, 0, 0.3), rgb(255, 17, 0, 1)); */
+    color: #fff;
+    /* height: 10px;
+    width: 10px; */
+    background-size: 30%;
+    box-shadow: 0 0 53px black, 0 0 90px white, 0 0 90px white;
+}

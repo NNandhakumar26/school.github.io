@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="ind.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Playfair+Display:wght@454&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>St.John's International School</title>
+    <style>
+        .btn {
+            width: auto;
+            height: auto;
+            font-size: 1.3rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            position: relative;
+            color: white;
+            z-index: 0;
+            border: 1px solid #78FF07;
+            /* background: black; */
+            overflow: hidden;
+        }
+        
+        .btn:hover::before {
+            top: 0px;
+            border-radius: 0;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 60px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background: #78FF07;
+            border-radius: 50% 50% 0% 0;
+            z-index: -1;
+            transition: all 0.5s;
+        }
+        /* .wrapper {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } */
+        
+        .button {
+            display: block;
+            width: 100%;
+            height: auto;
+            line-height: 40px;
+            font-size: 18px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: #333;
+            margin-top: 2%;
+            border-left: 2px solid #333;
+            border-right: 2px solid #333;
+            letter-spacing: 2px;
+            text-align: center;
+            position: relative;
+            transition: all .35s;
+        }
+        
+        .button span {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .button:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: darkblue;
+            transition: all .35s;
+        }
+        
+        .button:hover {
+            color: #fff;
+        }
+        
+        .button:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="w3-theme-light">
+    <!-- <SMALL DARK BLUE HEADER> -->
+    <!-- <div class="w3-container w3-hide-medium w3-hide-small " style="width: 100%; background-color: rgb(1, 1, 90);">
+        <table class="w3-table">
+            <tr>
+                <td style="text-align: left;">9585447986</td>
+                <td style="text-align: right;">contact@stjohnsfatehabad.com</td>
+            </tr>
+        </table>
+    </div> -->
+
+    <!-- <div class="w3-container">
+        <img src="logo.jpg" class="w3-border" alt="St.John's International School" style="padding:4px;width:50%; height: 10%; width: 10%; background-image: linear-gradient(rgba(255, 255, 255, 0)); order: inherit;">
+    </div> -->
+    <!-- <div class="w3-container" style="background-image: linear-gradient(rgba(0,0,0,0)); color: black;">
+        <p>This is a text for contact informations</p>
+        <div class="w3-center" style="background-color: rgba(255, 255, 255, 0);">
+            <img src="logo.jpg" class="w3-border" alt="St.John's International School" style="padding:4px;width:50%; height: 10%; width: 10%; background-image: linear-gradient(rgba(255, 255, 255, 0)); margin-top: -4%;">
+        </div>
+    </div> -->
+
+    <div class="w3-display-container">
+
+        <div class="slider">
+            <div class="slide current">
+                <div class="content">
+                    <h1>Education</h1>
+                    <div class="w3-container" style="background-color: darkviolet; border-radius: 20px; width: 50px; height: 3px;"></div>
+                    <p>
+                        Education is the most powerful weapon one can use to change the world.
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Slide Two</h1>
+                    <div class="w3-container" style="background-color: indigo; border-radius: 20px; width: 50px; height: 3px;"></div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic maxime, voluptatibus labore doloremque vero!
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Slide Three</h1>
+                    <div class="w3-container" style="background-color: darkblue; border-radius: 20px; width: 50px; height: 3px;"></div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic maxime, voluptatibus labore doloremque vero!
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Slide Four</h1>
+                    <div class="w3-container" style="background-color: darkgreen; border-radius: 20px; width: 50px; height: 3px;"></div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic maxime, voluptatibus labore doloremque vero!
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Slide Five</h1>
+                    <div class="w3-container" style="background-color: red; border-radius: 20px; width: 50px; height: 3px;"></div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic maxime, voluptatibus labore doloremque vero!
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Slide Six</h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic maxime, voluptatibus labore doloremque vero!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fas fa-arrow-left"></i></button>
+            <button id="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <!-- <div class="w3-left w3-top">
+            <img src="schoolname.jpg" class="w3-border">
+        </div> -->
+
+        <div class="w3-top w3-center">
+
+            <div class="w3-bar">
+
+                <a class="w3-bar-item w3-hover-black w3-hide-medium w3-hide-large w3-right " href="javascript:void(0); " onclick="toggleFunction() " title="Toggle Navigation Menu "> -->
+                <i class="fa fa-bars "></i>
+                </a>
+
+
+
+
+                <!-- <a href="#home " class="w3-dropdown-hover w3-bar-item w3-button w3-hide-small">HOME</a> -->
+                <div class="w3-bar-item" id="lightbutton">
+                    <div class="w3-dropdown-hover underlineEffects">
+
+                        <a href="temp2.html" class="w3-hide-small "> HOME</a>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                            <a href="#" class="w3-bar-item ">text 1</a>
+                            <a href="#" class="w3-bar-item w3-button">text 2</a>
+                            <a href="#" class="w3-bar-item w3-button">textt 3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-bar-item" id="lightbutton">
+                    <div class="w3-dropdown-hover underlineEffects">
+                        <!-- <a href="#home" class="w3-button w3-hide-small">HOME</a> -->
+                        <a href="temp2.html" class="w3-hide-small "> ABOUT</a>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                            <a href="#" class="w3-bar-item ">text 1</a>
+                            <a href="#" class="w3-bar-item w3-button">text 2</a>
+                            <a href="#" class="w3-bar-item w3-button">textt 3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-bar-item" id="lightbutton">
+                    <div class="w3-dropdown-hover underlineEffects">
+
+                        <a href="temp2.html" class="w3-hide-small "> Third</a>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                            <a href="#" class="w3-bar-item ">text 1</a>
+                            <a href="#" class="w3-bar-item w3-button">text 2</a>
+                            <a href="#" class="w3-bar-item w3-button">textt 3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-bar-item" id="lightbutton">
+                    <div class="w3-dropdown-hover underlineEffects">
+                        <!-- <a href="#home" class="w3-button w3-hide-small">HOME</a> -->
+                        <a href="temp2.html" class="w3-hide-small underlineEffects"> ADMISSION</a>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                            <a href="#" class="w3-bar-item ">text 1</a>
+                            <a href="#" class="w3-bar-item w3-button">text 2</a>
+                            <a href="#" class="w3-bar-item w3-button">textt 3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-bar-item " id="lightbutton">
+                    <div class="w3-dropdown-hover underlineEffects">
+                        <!-- <a href="#home" class="w3-button w3-hide-small">HOME</a> -->
+                        <a href="temp2.html" class="w3-hide-small underlineEffects"> PROJECT</a>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                            <a href="#" class="w3-bar-item ">text 1</a>
+                            <a href="#" class="w3-bar-item w3-button">text 2</a>
+                            <a href="#" class="w3-bar-item w3-button">textt 3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-bar-item " id="lightbutton">
+                    <div class="w3-dropdown-hover underlineEffects">
+                        <!-- <a href="#home" class="w3-button w3-hide-small">HOME</a> -->
+                        <a href="temp2.html" class="w3-hide-small underlineEffects"> GALLERY</a>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                            <a href="#" class="w3-bar-item ">text 1</a>
+                            <a href="#" class="w3-bar-item w3-button">text 2</a>
+                            <a href="#" class="w3-bar-item w3-button">textt 3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-bar-item " id="lightbutton">
+                    <div class="w3-dropdown-hover underlineEffects">
+                        <!-- <a href="#home" class="w3-button w3-hide-small">HOME</a> -->
+                        <a href="temp2.html" class="w3-hide-small underlineEffects"> CONTACT US</a>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                            <a href="#" class="w3-bar-item ">text 1</a>
+                            <a href="#" class="w3-bar-item w3-button">text 2</a>
+                            <a href="#" class="w3-bar-item w3-button">textt 3</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <a href="#about " class="w3-bar-item w3-button w3-hide-small"> ABOUT</a>
+
+
+
+                <a href="#portfolio " class="w3-bar-item w3-button w3-hide-small"> EDUCATION</a>
+                <a href="#contact " class="w3-bar-item w3-button w3-hide-small"> ACADEMICS</a> -->
+
+                <!-- <a href="#home " class="w3-bar-item w3-button w3-hide-small ">ADMISSION</a>
+                <a href="#about " class="w3-bar-item w3-button w3-hide-small "> PROJECT</a>
+
+                <a href="#portfolio " class="w3-bar-item w3-button w3-hide-small"> GALLERY</a>
+                <a href="#contact " class="w3-bar-item w3-button w3-hide-small"> CONTACT US</a> -->
+
+                <!-- <a href="# " class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red ">
+                    <i class="fa fa-search "></i>
+                    </a> -->
+
+
+            </div>
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo " class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium ">
+                <a href="#about " class="w3-bar-item w3-button " onclick="toggleFunction() ">ABOUT</a>
+                <a href="#portfolio " class="w3-bar-item w3-button " onclick="toggleFunction() ">PORTFOLIO</a>
+                <a href="#contact " class="w3-bar-item w3-button " onclick="toggleFunction() ">CONTACT</a>
+                <a href="# " class="w3-bar-item w3-button ">SEARCH</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-row w3-center">
+        <div class=" w3-third">
+            <div class="w3-container w3-padding-64 button">ABOUT US</div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-container w3-padding-64 button">CONTACT US</div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-container w3-padding-64 button">FOR MORE INFORMATION</div>
+        </div>
+    </div>
+
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">Dropdown</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+        <div class="w3-padding-large" style="height: 1000px;">
+            This is a sample text
+        </div>
+        <div class="w3-padding-large">
+            This is a sample text
+        </div>
+        <div class="w3-padding-large">
+            This is a sample text
+        </div>
+        <div class="w3-padding-large" style="height: 1000px;">
+            This is a sample text
+        </div>
+        <div class="w3-padding-large">
+            This is a sample text
+        </div>
+        <div class="w3-padding-large">
+            This is a sample text
+        </div>
+        <div class="w3-padding-large" style="height: 1000px;">
+            This is a sample text
+        </div>
+        <div class="w3-padding-large">
+            This is a sample text
+        </div>
+        <div class="w3-padding-large">
+            This is a sample text
+        </div>
+
+
+
+        <!-- <HEADER MAIN ANIMATION> -->
+
+
+
+
+        <script src="image.js "></script>
+        <script>
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01 ").src = element.src;
+                document.getElementById("modal01 ").style.display = "block ";
+                var captionText = document.getElementById("caption ");
+                captionText.innerHTML = element.alt;
+            }
+
+            // Change style of navbar on scroll
+            window.onscroll = function() {
+                myFunction()
+            };
+
+            function myFunction() {
+                var navbar = document.getElementById("myNavbar");
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    navbar.className = "w3-bar " + " w3-card " + " w3-animate-top " + " w3-white ";
+                } else {
+                    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+                }
+            }
+
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function toggleFunction() {
+                var x = document.getElementById("navDemo ");
+                if (x.className.indexOf("w3-show ") == -1) {
+                    x.className += " w3-show ";
+                } else {
+                    x.className = x.className.replace(" w3-show ", " ");
+                }
+            }
+        </script>
+</body>
+
+</html>
